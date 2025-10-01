@@ -36,7 +36,7 @@ jobs:
         chmod +x alpha-bleeding-linux.exe
 
     - name: Build with Gradle
-      run: ./gradlew alphableed buildDex
+      run: ./gradlew buildDex
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
