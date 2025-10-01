@@ -27,7 +27,8 @@ jobs:
       run: sdkmanager "build-tools;29.0.3"
     - name: Add Android SDK to PATH
       run: echo "${ANDROID_HOME}/build-tools/29.0.3" >> $GITHUB_PATH
-
+    - name: Install Android 30 Platform
+      run: sdkmanager "platforms;android-30"
     - name: Grant execute permissions
       run: |
         chmod +x gradlew
